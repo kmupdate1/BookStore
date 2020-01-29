@@ -12,7 +12,7 @@ class MakeConsumer {
     private val consumer1 = object: Thread() {
         override fun run() {
             println("私の名前は${consumers[0].name}です．\n" +
-                    "今から${consumers[0].title}を'書店'で買おうと思います．\n" +
+                    "今から[${consumers[0].title}]を'書店'で買おうと思います．\n" +
                     "-----------------------------------------------------")
             receiveOrder.orderPurchase(consumers[0].title)
         }
@@ -20,7 +20,7 @@ class MakeConsumer {
     private val consumer2 = object : Thread() {
         override fun run() {
             println("私の名前は${consumers[1].name}です．\n" +
-                    "今から${consumers[1].title}を'オンライン'で配送の注文をしようと思います．\n" +
+                    "今から[${consumers[1].title}]を'オンライン'で配送の注文をしようと思います．\n" +
                     "-----------------------------------------------------")
             receiveOrder.orderDelivery(consumers[1].title)
         }
@@ -28,7 +28,7 @@ class MakeConsumer {
     private val consumer3 = object : Thread() {
         override fun run() {
             println("私の名前は${consumers[2].name}です．\n" +
-                    "今から${consumers[2].title}を'オンライン'で配送の注文をしようと思います．\n" +
+                    "今から[${consumers[2].title}]を'オンライン'で配送の注文をしようと思います．\n" +
                     "-----------------------------------------------------")
             receiveOrder.orderDelivery(consumers[2].title)
         }
@@ -36,7 +36,7 @@ class MakeConsumer {
     private val consumer4 = object : Thread() {
         override fun run() {
             println("私の名前は${consumers[3].name}です．\n" +
-                    "今から${consumers[3].title}を'立ち読み'しようと思います．\n" +
+                    "今から[${consumers[3].title}]を'立ち読み'しようと思います．\n" +
                     "-----------------------------------------------------")
             receiveOrder.orderRead(consumers[3].title)
         }
@@ -44,7 +44,7 @@ class MakeConsumer {
     private val consumer5 = object : Thread() {
         override fun run() {
             println("私の名前は${consumers[4].name}です．\n" +
-                    "今から${consumers[4].title}を'書店'で買おうと思います．\n" +
+                    "今から[${consumers[4].title}]を'書店'で買おうと思います．\n" +
                     "-----------------------------------------------------")
             receiveOrder.orderPurchase(consumers[4].title)
         }

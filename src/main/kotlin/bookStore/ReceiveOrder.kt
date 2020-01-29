@@ -7,6 +7,7 @@ package bookStore
 class ReceiveOrder(private val bookStore: BookStore): MakeConsumer.OrderedDeliveryListener{
     init {
         MakeConsumer(this)
+        println(Thread.currentThread())
     }
 
     override fun orderDelivery(title: String) {
